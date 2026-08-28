@@ -7,7 +7,7 @@
   <meta name="robots" content="noindex, nofollow" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="boutique.css" />
 </head>
@@ -16,13 +16,22 @@
   <header id="header">
     <nav class="nav">
       <a href="index.html" class="logo">JM Expert</a>
-      <button id="cartToggle" class="cart-toggle" aria-label="Panier" hidden>
-        🧺 <span id="cartCount" class="cart-count" hidden>0</span>
-      </button>
-      <button class="burger" id="burger" aria-label="Menu">
-        <span class="burger-lines"><span></span><span></span></span>
-        Menu
-      </button>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="galerie.html">Galerie privée</a></li>
+          <li><a href="boutique.html">Boutique</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+        <button id="cartToggle" class="cart-toggle" aria-label="Panier" hidden>
+          🧺 <span id="cartCount" class="cart-count" hidden>0</span>
+        </button>
+        <button class="burger" id="burger" aria-label="Menu">
+          <span class="burger-lines"><span></span><span></span></span>
+          Menu
+        </button>
+      </div>
     </nav>
   </header>
 

@@ -7,7 +7,7 @@
   <meta name="description" content="Jean-Michel Expert, photographe reportage dans les Landes : mariages, portraits, sport, événementiel et entreprise. Basé à Saint-Julien-d'Armagnac." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -15,10 +15,19 @@
   <header id="header">
     <nav class="nav">
       <a href="index.html" class="logo">JM Expert</a>
-      <button class="burger" id="burger" aria-label="Menu">
-        <span class="burger-lines"><span></span><span></span></span>
-        Menu
-      </button>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="presentation.html">Présentation</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="galerie.html">Galerie privée</a></li>
+          <li><a href="boutique.html">Boutique</a></li>
+          <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+        <button class="burger" id="burger" aria-label="Menu">
+          <span class="burger-lines"><span></span><span></span></span>
+          Menu
+        </button>
+      </div>
     </nav>
   </header>
 
@@ -36,18 +45,15 @@
 
   <!-- ── HERO ── -->
   <section class="hero" id="accueil">
-    <div class="hero-frame">
-      <span class="hero-caption">Reportage — Landes</span>
-    </div>
-    <div class="hero-title-wrap">
+    <div class="hero-inner">
       <p class="hero-tag">Saint-Julien-d'Armagnac, Landes</p>
-      <h1 class="hero-title">Jean-Michel<br /><em>Expert</em></h1>
-    </div>
-    <div class="hero-below">
-      <p class="hero-desc reveal">Photographe reportage : mariages, portraits, sport, événementiel et entreprise.</p>
-      <div class="hero-actions reveal">
-        <a href="portfolio.html" class="btn-link">Voir le portfolio →</a>
-        <a href="contact.html" class="btn-link">Me contacter →</a>
+      <h1 class="hero-title">Photographe reportage : mariages, portraits, sport, événementiel et entreprise.</h1>
+      <div class="hero-bottom">
+        <p class="hero-desc">Jean-Michel Expert capture les moments qui comptent, avec exigence et sens du détail, dans les Landes et au-delà.</p>
+        <div class="hero-actions">
+          <a href="portfolio.html" class="btn btn-primary">Voir le portfolio</a>
+          <a href="contact.html" class="btn btn-outline">Me contacter</a>
+        </div>
       </div>
     </div>
   </section>
