@@ -13,21 +13,16 @@
 
   <header id="header">
     <nav class="nav">
-      <a href="index.html" class="logo">Jean-Michel <em>Expert</em></a>
-      <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="presentation.html">Présentation</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="galerie.html">Galerie privée</a></li>
-        <li><a href="boutique.html">Boutique</a></li>
-        <li><a href="contact.html" class="nav-cta">Contact</a></li>
-      </ul>
-      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <a href="index.html" class="logo">JM Expert</a>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span class="burger-lines"><span></span><span></span></span>
+        Menu
+      </button>
     </nav>
   </header>
 
   <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fermer">✕</button>
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fermer">Fermer ✕</button>
     <ul class="mobile-menu-links">
       <li><a href="index.html">Accueil</a></li>
       <li><a href="presentation.html">Présentation</a></li>
@@ -39,9 +34,11 @@
   </div>
 
   <section class="page-hero">
-    <span class="tag">Le photographe</span>
-    <h1>Présentation</h1>
-    <p>Spécialisé dans la photo de reportage, dans les Landes et au-delà.</p>
+    <div class="page-hero-inner">
+      <span class="tag">Le photographe</span>
+      <h1>Présentation</h1>
+      <p>Spécialisé dans la photo de reportage, dans les Landes et au-delà.</p>
+    </div>
   </section>
 
   <section>
@@ -59,23 +56,28 @@
 
   <section class="bg-beige">
     <div class="container">
-      <div class="section-header reveal">
+      <div class="section-header reveal" style="text-align:left;margin:0 0 20px;">
         <span class="section-tag">Mon approche</span>
         <h2>Reportage avant tout</h2>
-        <p>Capter l'instant tel qu'il est, sans le dénaturer.</p>
       </div>
-      <div class="services-grid">
-        <div class="service-card reveal">
-          <h3>Discrétion</h3>
-          <p>Je m'efface pour laisser place aux vrais moments — pas de mise en scène forcée, juste la réalité de l'instant.</p>
+      <div class="services-list" style="border-color:var(--beige-dark)">
+        <div class="service-row reveal" style="cursor:default;">
+          <span class="service-num">01</span>
+          <span class="service-row-title">Discrétion</span>
+          <span class="service-row-desc">Je m'efface pour laisser place aux vrais moments — pas de mise en scène forcée.</span>
+          <span></span>
         </div>
-        <div class="service-card reveal">
-          <h3>Réactivité</h3>
-          <p>Le bon moment ne se répète pas. Anticiper, être au bon endroit au bon moment, c'est le cœur du métier.</p>
+        <div class="service-row reveal" style="cursor:default;">
+          <span class="service-num">02</span>
+          <span class="service-row-title">Réactivité</span>
+          <span class="service-row-desc">Le bon moment ne se répète pas. Être au bon endroit au bon moment, c'est le cœur du métier.</span>
+          <span></span>
         </div>
-        <div class="service-card reveal">
-          <h3>Proximité</h3>
-          <p>Un accompagnement de A à Z, du premier échange à la remise des photos, avec des délais annoncés clairement.</p>
+        <div class="service-row reveal" style="cursor:default;">
+          <span class="service-num">03</span>
+          <span class="service-row-title">Proximité</span>
+          <span class="service-row-desc">Un accompagnement de A à Z, avec des délais annoncés clairement.</span>
+          <span></span>
         </div>
       </div>
     </div>
