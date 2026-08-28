@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tableau de bord boutique — Jean-Michel Expert</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="stylesheet" href="admin-boutique.css" />
+</head>
+<body>
+
+  <div id="loginScreen" class="login-screen">
+    <div class="login-card">
+      <h1>Accès administrateur</h1>
+      <p>Boutique photos — Jean-Michel Expert</p>
+      <div class="login-row">
+        <input type="password" id="password" placeholder="Mot de passe" autofocus />
+        <button id="loadBtn">Entrer</button>
+      </div>
+      <div id="error" class="error"></div>
+    </div>
+  </div>
+
+  <div id="dashboard" class="dashboard" hidden>
+    <div class="dashboard-inner">
+      <h1>Tableau de bord — Boutique photos</h1>
+      <div class="dashboard-nav">
+        <a href="admin-boutique.html" class="active">Commandes</a>
+        <a href="admin-galeries.html">Galeries clients</a>
+      </div>
+
+      <div class="stat-grid">
+        <div class="stat-box">
+          <div class="value" id="orderCount">0</div>
+          <div class="label">Commandes payées</div>
+        </div>
+        <div class="stat-box">
+          <div class="value" id="photoCount">0</div>
+          <div class="label">Photos vendues</div>
+        </div>
+        <div class="stat-box">
+          <div class="value" id="total">0 €</div>
+          <div class="label">Revenu total</div>
+        </div>
+        <div class="stat-box stat-box--pending">
+          <div class="value" id="pendingCount">0</div>
+          <div class="label">En attente de paiement</div>
+        </div>
+      </div>
+
+      <div class="admin-columns">
+        <div class="admin-panel">
+          <h2>Photos les plus regardées</h2>
+          <table>
+            <thead><tr><th>Photo</th><th>Vues</th></tr></thead>
+            <tbody id="topViewedBody"></tbody>
+          </table>
+        </div>
+        <div class="admin-panel">
+          <h2>Ventes par photo</h2>
+          <table>
+            <thead><tr><th>Photo</th><th>Ventes</th><th>Revenu</th></tr></thead>
+            <tbody id="perPhotoBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="admin-panel admin-panel--orders">
+        <h2>Commandes</h2>
+        <table>
+          <thead><tr><th>Réf.</th><th>Date</th><th>Client</th><th>Photos</th><th>Montant</th><th>Paiement</th><th>Statut</th><th></th></tr></thead>
+          <tbody id="ordersBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="admin-boutique.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Jean-Michel Expert Photographe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header id="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">Jean-Michel <em>Expert</em></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="galerie.html">Galerie privée</a></li>
+        <li><a href="boutique.html">Boutique</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Fermer">✕</button>
+    <ul class="mobile-menu-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="presentation.html">Présentation</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="galerie.html">Galerie privée</a></li>
+      <li><a href="boutique.html">Boutique</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="page-hero">
+    <span class="tag">Discutons</span>
+    <h1>Contact</h1>
+    <p>Un projet, une question ? Écrivez-moi ou appelez directement.</p>
+  </section>
+
+  <section>
+    <div class="container contact-layout">
+      <div class="reveal">
+        <div class="contact-info-item">
+          <span class="ci-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l1.27-.73a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+          <div>
+            <strong>Téléphone</strong>
+            <p><a href="tel:0628475258">06 28 47 52 58</a></p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <span class="ci-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div>
+            <strong>Adresse</strong>
+            <p>1510 Route de Créon d'Armagnac<br />40240 Saint-Julien-d'Armagnac</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <span class="ci-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+          <div>
+            <strong>Réponse</strong>
+            <p>Sous 48h en moyenne</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contact-form">
+        <div class="form-hp" aria-hidden="true">
+          <label for="hp_site">Laissez ce champ vide</label>
+          <input type="text" id="hp_site" name="hp_site" tabindex="-1" autocomplete="off" />
+        </div>
+        <input type="hidden" id="form_ts" name="form_ts" />
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="prenom">Prénom <span style="color:#c62828">*</span></label>
+            <input type="text" id="prenom" name="prenom" required />
+          </div>
+          <div class="form-group">
+            <label for="nom">Nom <span style="color:#c62828">*</span></label>
+            <input type="text" id="nom" name="nom" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email <span style="color:#c62828">*</span></label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="sujet">Sujet</label>
+          <select id="sujet" name="sujet">
+            <option value="">Choisir…</option>
+            <option value="Mariage">Mariage</option>
+            <option value="Portrait">Portrait</option>
+            <option value="Sport">Sport</option>
+            <option value="Événementiel">Événementiel</option>
+            <option value="Entreprise">Entreprise</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Message <span style="color:#c62828">*</span></label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">Jean-Michel <em>Expert</em></a>
+          <p>Photographe reportage · Saint-Julien-d'Armagnac, Landes</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navigation</h5>
+          <ul>
+            <li><a href="presentation.html">Présentation</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="boutique.html">Boutique photos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <ul>
+            <li><a href="tel:0628475258">06 28 47 52 58</a></li>
+            <li>1510 Route de Créon d'Armagnac<br />40240 Saint-Julien-d'Armagnac</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Jean-Michel Expert Photographe · SIRET 791 868 565 · <a href="mentions-legales.html">Mentions légales</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
